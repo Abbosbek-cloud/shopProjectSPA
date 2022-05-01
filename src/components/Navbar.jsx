@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { BsCart2 } from "react-icons/bs";
 
 const Navbar = ({ productNum }) => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
