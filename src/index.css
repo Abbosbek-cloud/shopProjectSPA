@@ -24,6 +24,10 @@ nav .navbar-collapse.collapse {
   nav .navbar-collapse.active {
     height: 50vh !important;
   }
+  
+  .navbar-rel {
+    position: relative;
+  }
 
   .navCart {
     position: absolute;
@@ -37,12 +41,13 @@ nav .navbar-collapse.collapse {
   }
 }
 
-@media (min-width: 991px){
-  .navCart{
-    right: 0;
+
+@media (min-width: 991px) {
+  .navCart {
+    right: 0 !important;
     left: auto !important;
   }
-  
+
   .navCart span {
     right: 0 !important;
     left: auto !important;
