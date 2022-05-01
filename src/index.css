@@ -84,3 +84,8 @@ nav .navbar-collapse {
 .contactItem:hover .contactIcon {
   transform: scale(1.5);
 }
+
+.slick-arrow slick-prev {
+  z-index: 99;
+}
+
