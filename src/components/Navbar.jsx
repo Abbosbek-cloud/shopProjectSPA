@@ -68,7 +68,7 @@ const Navbar = ({ productNum }) => {
                 About us
               </NavLink>
             </li>
-            <li className="nav-item position-relative">
+            <li className="nav-item navbar-rel">
               <NavLink
                 style={({ isActive }) => {
                   return {
