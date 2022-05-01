@@ -52,8 +52,7 @@ export default class Home extends Component {
 
     const props = this.props;
     return (
-      <div className="container">
-        <h3>Carousel</h3>
+      <div className="container mt-5">
         <Slider {...settings}>
           {props.products.map((item) => (
             <Card key={item.id} data={item} status={true} />
