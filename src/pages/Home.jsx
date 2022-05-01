@@ -14,6 +14,8 @@ function SampleNextArrow(props) {
         boxShadow: "0px 0px 5px rgba(0,0,0,0.5) ",
         borderRadius: "50%",
         color: "black",
+        position: "absolute",
+        right: 0,
       }}
       onClick={onClick}
     >
@@ -33,6 +35,8 @@ function SamplePrevArrow(props) {
         boxShadow: "0px 0px 5px rgba(0,0,0,0.5) ",
         borderRadius: "50%",
         color: "black",
+        position: "absolute",
+        left: 0,
       }}
       onClick={onClick}
     />
@@ -48,6 +52,32 @@ export default class Home extends Component {
       slidesToScroll: 2,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     };
 
     const props = this.props;
