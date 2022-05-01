@@ -85,7 +85,7 @@ nav .navbar-collapse {
   transform: scale(1.5);
 }
 
-.slick-arrow slick-prev {
+.slick-arrow .slick-prev {
   z-index: 99;
 }
 
