@@ -83,7 +83,6 @@ export default class Ecommerce extends Component {
     const del = (id) => {
       this.setState({ cart: s.cart.filter((item) => item.id !== id) });
     };
-    console.log(this.state.cart);
     return (
       <div className="container">
         <div className="row mt-3">
